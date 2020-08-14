@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "716839257283",
+    "firebase_url": "https://kwamito-4c3a0.firebaseio.com",
+    "project_id": "kwamito-4c3a0",
+    "storage_bucket": "kwamito-4c3a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716839257283:android:1b14dd5f0ca98eb7f40e76",
+        "android_client_info": {
+          "package_name": "com.kwameasamoa.finanaceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716839257283-dd10no0njn52mtp47us6rg0fuuk88s9d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfyu90Z2N6SRHtwvb_q5P_TlhOI4GQBJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716839257283-dd10no0njn52mtp47us6rg0fuuk88s9d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

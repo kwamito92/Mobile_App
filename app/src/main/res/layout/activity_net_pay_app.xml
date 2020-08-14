@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".NetPayApp">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Hours Worked:"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ApptView" />
+
+            <EditText
+                android:id="@+id/Hrs"
+                android:layout_width="143dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/net_pay_border"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                app:layout_constraintStart_toEndOf="@+id/Hours"
+                app:layout_constraintTop_toBottomOf="@+id/ApptView" />
+
+            <TextView
+                android:id="@+id/PaidRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="28dp"
+                android:text="Hourly Rate:"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Hours" />
+
+            <EditText
+                android:id="@+id/Money"
+                android:layout_width="143dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/net_pay_border"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                app:layout_constraintStart_toEndOf="@+id/PaidRate"
+                app:layout_constraintTop_toBottomOf="@+id/Hrs" />
+
+            <TextView
+                android:id="@+id/Federal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="32dp"
+                android:text="Federal Tax:"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PaidRate" />
+
+            <EditText
+                android:id="@+id/FedTax"
+                android:layout_width="143dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/net_pay_border"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                app:layout_constraintStart_toEndOf="@+id/Federal"
+                app:layout_constraintTop_toBottomOf="@+id/Money" />
+
+            <TextView
+                android:id="@+id/State"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="36dp"
+                android:text="State Tax:"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Federal" />
+
+            <EditText
+                android:id="@+id/StateTax"
+                android:layout_width="143dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/net_pay_border"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                app:layout_constraintStart_toEndOf="@+id/State"
+                app:layout_constraintTop_toBottomOf="@+id/FedTax" />
+
+            <TextView
+                android:id="@+id/Local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="36dp"
+                android:text="Local Tax:"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/State" />
+
+            <EditText
+                android:id="@+id/LocalTax"
+                android:layout_width="143dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/net_pay_border"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                app:layout_constraintStart_toEndOf="@+id/Local"
+                app:layout_constraintTop_toBottomOf="@+id/StateTax" />
+
+            <TextView
+                android:id="@+id/FICA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="32dp"
+                android:text="FICA Tax:"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Local" />
+
+            <EditText
+                android:id="@+id/FicaTax"
+                android:layout_width="143dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/net_pay_border"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                app:layout_constraintStart_toEndOf="@+id/FICA"
+                app:layout_constraintTop_toBottomOf="@+id/LocalTax" />
+
+            <TextView
+                android:id="@+id/Insurance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:text="Health Insurance:"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FICA" />
+
+            <EditText
+                android:id="@+id/Health"
+                android:layout_width="143dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/net_pay_border"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                app:layout_constraintStart_toEndOf="@+id/Insurance"
+                app:layout_constraintTop_toBottomOf="@+id/FicaTax" />
+
+            <TextView
+                android:id="@+id/ApptView"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:text="Net Pay Calculator"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="8dp"
+                android:enabled="false"
+                android:text="Submit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Health" />
+
+            <Button
+                android:id="@+id/ResetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="40dp"
+                android:text="Reset"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Health" />
+
+            <Button
+                android:id="@+id/CancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Cancel"
+                app:layout_constraintEnd_toStartOf="@+id/ResetButton"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toEndOf="@+id/button"
+                app:layout_constraintTop_toBottomOf="@+id/Health" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
